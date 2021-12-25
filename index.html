@@ -50,10 +50,8 @@
                 <use href="./images/icons.svg#icon-close-black" data-modal-close></use>
             </svg>
         <form class="form">
-            <div class="form-field">
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-        </div>
-        <div class="form-field">   
+      <div class="form-field">   
             <label for="name" class="form-label">Имя</label>
             <input class="form-input" type="text" name="name" id="name">
             <svg class="form-icon" height="18px" width="18px">
@@ -73,16 +71,14 @@
             <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
         </div>
-        <div class="form-field">
+        <div class="form-field ">
             <label for="coment" class="form-label">Комментарий</label>
             <textarea name="coment" id="coment" placeholder="Введите текст"></textarea>
          </div>
-       
-        <div class="form-field">
-        <input type="checkbox" name="chekc" value="chekc" id="chekc">
-        <label for="chekc" class="">Соглашаюсь с рассылкой и принимаю 
-            <a href="">Условия договора</a>
-        </label></div>
+        <label class="checkbox-form"><input type="checkbox" name="chekc" value="chekc" id="chekc">
+        Соглашаюсь с рассылкой и принимаю 
+        <a href="">Условия договора</a>
+        </label>
 
         <button class="button-modal" type="submit">Отправить</button>
     </form>
@@ -398,6 +394,17 @@
         </a> 
     </li>
 </ul>
+</div>
+<form class="subscribe">
+<div class="subscribe-form">
+    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+<input type="email" name="email" placeholder="E-mail">
+<button type="submit" class="subscribe-button">Подписаться
+    <svg class="form-icon" height="24px" width="24px">
+        <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+</button>
+</form>
 </div>
 </div>
 </section>
