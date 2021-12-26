@@ -76,8 +76,8 @@
             <textarea name="coment" id="coment" placeholder="Введите текст"></textarea>
          </div>
         <label class="checkbox-form">
-        <input type="checkbox" name="chekc" value="chekc" id="chekc">
-        Соглашаюсь с рассылкой и принимаю 
+        <input type="checkbox" name="chekc" value="chekc">
+        <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю
         <a href="">Условия договора</a>
         </label>
 
@@ -399,7 +399,8 @@
 <form class="subscribe">
 <div class="subscribe-form">
     <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-<input type="email" name="email" placeholder="E-mail">
+<label for="subscribe-email"></label>
+    <input type="email" name="email" id="subscribe-email" placeholder="E-mail">
 </div>
 <button type="submit" class="subscribe-button">Подписаться
     <svg class="form-icon" height="24" width="24">
