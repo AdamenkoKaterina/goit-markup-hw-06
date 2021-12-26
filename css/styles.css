@@ -301,6 +301,11 @@ textarea {
     box-sizing: border-box;
     border-radius: 4px;
 }
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid var(--accent-color); 
+    fill: var(--accent-color);
+}
 .form-icon {
     position: absolute;
     left: 12px;
@@ -325,10 +330,14 @@ textarea {
   align-items: center;
 } 
 .checkbox {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-    appearance: none;
-
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .checkbox-icon {
     display: inline-block;
@@ -341,6 +350,9 @@ textarea {
 .checkbox:checked + .checkbox-icon {
     background-color: var(--accent-color);
     background-image: url('../images/icon\ check.svg');
+}
+.checkbox-link {
+    color: var(--accent-color);
 }
 .button-modal {
     width: 200px;
