@@ -247,6 +247,7 @@ letter-spacing: 0.06em;
 }
 .modal-icon {
     position: absolute;
+    cursor: pointer;
     top: 8px;
     right: 8px;
     display: flex;
@@ -259,8 +260,12 @@ letter-spacing: 0.06em;
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
 }
+.modal-icon:hover {
+    fill: var(--accent-color);
+}
 textarea {
     resize: none;
+    cursor: pointer;
     }
 .form {
     padding: 40px;
@@ -283,6 +288,7 @@ textarea {
 
 .form-label {
     display: block;
+    
     margin-bottom: 4px;
     text-align: left;
     font-size: 12px;
@@ -293,13 +299,15 @@ textarea {
 .form-input {
     position: relative;
     display: flex; 
+    cursor: pointer;
     height: 40px;
-    padding: 0;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 }
 .form-input:focus {
+    padding-left: 42px;
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color); 
     fill: var(--accent-color);
@@ -333,7 +341,8 @@ textarea:focus {
 .checkbox-form {
     display: flex;
     margin-bottom: 30px;
-  align-items: center;
+   justify-content: center;
+    align-items: center;
 } 
 .checkbox {
     position: absolute;
@@ -358,6 +367,7 @@ textarea:focus {
     border: var(--accent-color);
     background-image: url('../images/icon\ check.svg');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .checkbox-link {
     color: var(--accent-color);
@@ -571,21 +581,22 @@ text-decoration: none;
    color: #2196F3
   }
   .contacts-addres {
-    display: block;
+    display: flex;
     margin-bottom: 9px;
     color: var(--white);
     text-decoration: none; 
     font-style: normal;
+    line-height: 1.71;
 }
  .contacts-mail, 
 .contacts-tel {
-   display: block;  
+   display: flex;  
    color: rgba(255, 255, 255, 0.6); 
    text-decoration: none; 
    font-style: normal;
 }
 .contacts-mail {
-    display: block; 
+    display: flex; 
     margin-bottom: 9px;
 }
 .networks {
@@ -634,8 +645,9 @@ text-decoration: none;
 }
 .subscribe {
     display: flex;
-    margin-left: 93px;
     margin-top: 12px;
+    margin-right: 0;
+    
 }
 .subscribe-title {
     font-size: 14px;
@@ -645,10 +657,15 @@ text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 20px;
  }
+ .subscribe-form {
+   margin-left: 93px;
+   
+ }
  .subscribe-form input {
      display: flex;
     width: 358px;
     height: 50px;
+    color: var(--white);
     background-color: var(--dark-background);
      border: 1px solid rgba(255, 255, 255, 0.3);
      box-sizing: border-box;
@@ -668,6 +685,7 @@ text-decoration: none;
     width: 200px;
     height: 50px;
     margin-top: 37px;
+    margin-right: 0;
     margin-left: 12px;
     padding-left: 29px;
     color: var(--white);
