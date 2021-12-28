@@ -580,6 +580,9 @@ text-decoration: none;
     .logo-footer2  {
    color: #2196F3
   }
+  .logo-contacts {
+      flex-grow: 1;
+  }
   .contacts-addres {
     display: flex;
     margin-bottom: 9px;
